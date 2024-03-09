@@ -8,10 +8,12 @@ lazy val root = (project in file("."))
   )
 
 libraryDependencies ++= Seq(
-  "org.apache.kafka" %% "kafka" % "3.0.0", // Updated to the latest stable version
-  "com.typesafe.akka" %% "akka-http" % "10.2.6", // Adjusted to a known compatible version
-  "com.typesafe.akka" %% "akka-stream" % "2.6.17", // Adjusted to a known compatible version
+  "org.apache.kafka" %% "kafka" % "3.0.0",
+  "com.typesafe.akka" %% "akka-http" % "10.2.6",
+  "com.typesafe.akka" %% "akka-stream" % "2.6.17",
   "ch.qos.logback" % "logback-classic" % "1.2.6",
-  "org.playframework" %% "play-json" % "3.0.2",
-  "mysql" % "mysql-connector-java" % "8.0.28"
+  "com.typesafe.play" %% "play-json" % "2.10.0",
+  "mysql" % "mysql-connector-java" % "8.0.28",
+  "org.apache.spark" %% "spark-core" % "3.5.0",
+  "org.apache.spark" %% "spark-sql" % "3.2.0"
 )
